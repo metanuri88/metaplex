@@ -564,21 +564,21 @@ export function Notifications() {
     <span>No notifications</span>
   );
 
-  const justContent = (
+  const  = (
     <Popover placement="bottomLeft" content={content} trigger="click">
       <img src={'/bell.svg'} style={{ cursor: 'pointer' }} />
       {!!notifications.length && <div className="mobile-notification">{notifications.length - 1}</div>}
     </Popover>
   );
 
-  if (notifications.length === 0) return justContent;
+  if (notifications.length === 0) return ;
   else
     return (
       <Badge
         count={notifications.length - 1}
         style={{ backgroundColor: 'white', color: 'black' }}
       >
-        {justContent}
+        {}
       </Badge>
     );
 }
